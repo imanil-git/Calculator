@@ -10,3 +10,12 @@
 - The **src** (short for source) attribute is used to embed or load a resource that needs to be executed or displayed as part of the document.
 
 - It tells the browser, "Here's a file you need to download and execute."
+
+
+### This style is to show Calculator 3D effect.
+
+```CSS
+.calculator{
+    transform: perspective(70rem) rotateX(30deg);
+}
+```
