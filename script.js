@@ -95,7 +95,7 @@ const displayTotal = () => {
     audio.play();
   }
 
-  const total = eval(strToDisplay)+ extraValue; // (pranking part) 
+  const total = eval(strToDisplay)+ extraValue; // (pranking part) if random value pass less than 3 value pranks happen
 
   strToDisplay = total.toString();
   display(strToDisplay);
@@ -105,9 +105,9 @@ const displayTotal = () => {
 //Pranking part
 
 const randomValue = () => {
-  const num = Math.round(Math.random() * 10);   //0-10
+  const num = Math.round(Math.random() * 10);   // Generates a number between 0-10
 
-  return num < 4 ? num : 0;
+  return num < 4 ? num : 0;       // Returns the prank value if it's less than 4
 }
 
 // Binding Keyword with browser app 

@@ -19,3 +19,24 @@
     transform: perspective(70rem) rotateX(30deg);
 }
 ```
+
+### This is Prank Calculator
+
+- This Calculator can prank you
+- Coding
+```JS
+const randomValue = () => {
+  const num = Math.round(Math.random() * 10);
+  return num < 4 ? num : 0;
+};
+```
+- Generates a random integer from 0 to 10 using Math.random() * 10 and Math.round().
+- If the number is less than 4 or greater (4 - 10), no prank happens (returns 0).
+- This means the prank occurs 40% of the time.(num < 4)
+- If random num comes less than 4 than it add with calculated number and that's how prank is done. In function(displayTotal)
+```JS
+const total = eval(strToDisplay)+ extraValue;
+```
+
+
+### If Prank happen you can see effect
