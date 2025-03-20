@@ -3,6 +3,8 @@ const allButtonsElm = document.querySelectorAll(".btn");
 let strToDisplay = "";
 const displayElm = document.querySelector(".display");
 
+const displayMessage = document.querySelector(".message");
+
 const opreators = ["%", "/", "*", "-", "+"];
 
 let lastOperator = "";
@@ -13,6 +15,8 @@ const audio = new Audio("./assets/aa.wav");
 
 const buttonAction = (value) => {
   displayElm.classList.remove("prank");
+
+  displayMessage.style.display = "none";
 
   if (value === "AC") {
     strToDisplay = "";
@@ -93,6 +97,8 @@ const displayTotal = () => {
   if(extraValue) {
     displayElm.classList.add("prank");
     audio.play();
+
+    displayMessage.style.display = "block";
   }
 
   const total = eval(strToDisplay)+ extraValue; // (pranking part) if random value pass less than 3 value pranks happen
@@ -119,3 +125,4 @@ document.addEventListener("keypress", (e)=>{
   }
   buttonAction(value);
 })
+
