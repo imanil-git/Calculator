@@ -39,11 +39,11 @@ body{
 }
 
 .message{
-  display: none;
+  display: none;     /*   hides message to appear first display  */
   color: red;
   font-size: 40px;
 
-  animation: updown .2s;
+  animation: updown .4s;
 }
 
 .calculator{
@@ -186,15 +186,15 @@ body{
 
 @keyframes updown {
   0% {
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
   50%{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
   80%{
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
   100%{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
